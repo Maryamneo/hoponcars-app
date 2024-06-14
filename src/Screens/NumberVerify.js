@@ -53,7 +53,7 @@ const NameScreen = ({ navigation }) => {
                     <Text style={styles.resendStyle}>Resend Code</Text>
         </View>
         <View style={styles.btnView}>
-          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TermAndPolicy')}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('firstlastname')}>
             <Text style={styles.buttonText}>Next</Text>
           </TouchableOpacity>
         </View>
@@ -131,7 +131,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: 'white',
         // backgroundColor: '#333',
-         marginHorizontal: 26,
+         marginHorizontal: 22,
+        //  marginLeft:wp(1)
     },
     resendStyle:{
         color:colors.purpleblue,

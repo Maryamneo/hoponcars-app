@@ -6,6 +6,7 @@ import {
     heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import { colors } from '../Constants/index';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export const CountryPickerInput = ({ onSelect, countryNameCode, callingCode, value, onChangeText }) => {
     const [showCountryPicker, setShowCountryPicker] = useState(false);
@@ -27,7 +28,10 @@ export const CountryPickerInput = ({ onSelect, countryNameCode, callingCode, val
                     withFlag={true}
                     onClose={() => setShowCountryPicker(false)}
                 />
-                <Text style={styles.countryCodeText}>{callingCode}</Text>
+                 <Ionicons name="chevron-down" size={15} color={colors.White} />
+           
+                  <Text style={styles.countryCodeText}>{callingCode}</Text>
+               
             </TouchableOpacity>
             <TextInput
                 placeholder="Phone Number"
@@ -76,8 +80,11 @@ const styles = StyleSheet.create({
         flex: 1,
         color: 'black',
         fontSize: 16,
-        marginLeft: wp('2%'),
-        borderBottomWidth:1
+        marginLeft: wp('6%'),
+        borderBottomWidth:1,
+        borderBottomColor:'white',
+      
+
         // backgroundColor: 'white',
     },
 });

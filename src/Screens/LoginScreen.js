@@ -20,7 +20,7 @@ const LoginScreen = ({ navigation }) => {
     };
 
  return (
-    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: '#1A1A1A' }}>
+    // <KeyboardAvoidingView style={{ flex: 1, backgroundColor: '#1A1A1A' }}>
          <KeyboardAwareScrollView contentContainerStyle={styles.container}>
             <View>
                <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -48,7 +48,7 @@ const LoginScreen = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
             </KeyboardAwareScrollView>
-        </KeyboardAvoidingView>
+        // </KeyboardAvoidingView>
     );
 };
 
@@ -93,9 +93,10 @@ const styles = StyleSheet.create({
         fontSize: 18,
     },
     textStyle:{
-        marginTop:hp(10),
-        fontSize:17,
-        color:colors.White
+        bottom:0,
+        // marginTop:hp(10),
+        fontSize:16,
+        color:colors.graywhite
     }
 });
 

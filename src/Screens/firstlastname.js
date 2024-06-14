@@ -6,6 +6,7 @@ import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
   } from "react-native-responsive-screen";
+import { colors } from '../Constants/index';
 const NameScreen = ({ navigation }) => {
   return (
 
@@ -34,14 +35,14 @@ const NameScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#1A1A1A',
+      backgroundColor: colors.black,
       padding: 16,
       justifyContent: 'space-between',
 
     },
     title: {
       fontSize: 24,
-      color: 'white',
+      color: colors.White,
       marginBottom: 40,
       marginTop:20,
       textAlign: 'left',
@@ -55,9 +56,9 @@ const styles = StyleSheet.create({
       alignSelf: 'center',
     },
     input: {
-      color: 'white',
+        color: colors.White,
       borderBottomWidth: 1,
-      borderBottomColor: '#DADADA',
+      borderBottomColor: colors.graywhite,
       width: 140,
       padding: 8,
       fontSize: 16,
@@ -76,6 +77,8 @@ const styles = StyleSheet.create({
       marginTop: 40,
       alignItems: 'center',
       width: '100%',
+      shadowOpacity:10,
+      elevation:10
     },
     buttonText: {
       color: 'white',
